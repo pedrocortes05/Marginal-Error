@@ -13,3 +13,12 @@
 #
 # Crono.perform(TestJob).every 2.days, at: '15:30'
 #
+
+class CronoTickJob
+    def perform(*args)
+        puts "RAILS, SUCK MY BALLLLS!!!!!"
+        UpdateTickJob.perform_now
+    end
+end
+
+Crono.perform(CronoTickJob).every 10.seconds
