@@ -1,0 +1,12 @@
+<h1>Game#index</h1>
+<p>Find me in app/views/game/index.html.erb</p>
+
+<div data-controller="hello"></div>
+
+<%= @game.width %>
+
+<%= link_to "ok", root_path, "data-controller": "ok" %>
+<a href="#" onclick="this.style.backgroundColor='#009900';this.style.color='#FFFFFF';">Paint it green</a>
+
+<%= turbo_stream_from @game %>
+<canvas id="game_canvas" width="<%= @game.width %>" height="<%= @game.height %>" data-controller="game"></canvas>
