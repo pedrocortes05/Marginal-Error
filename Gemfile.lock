@@ -84,6 +84,9 @@ GEM
     childprocess (4.1.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    crono (2.0.0)
+      rails (>= 5.2.8)
+      sprockets-rails
     cssbundling-rails (1.1.1)
       railties (>= 6.0.0)
     debug (1.6.0)
@@ -238,6 +241,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
+  crono
   cssbundling-rails
   debug
   jbuilder
