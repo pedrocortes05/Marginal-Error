@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_12_072417) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_12_190757) do
   create_table "crono_jobs", force: :cascade do |t|
     t.string "job_id", null: false
     t.text "log", limit: 1073741823
@@ -26,14 +26,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_12_072417) do
     t.datetime "updated_at", null: false
     t.integer "width"
     t.integer "height"
-  end
-
-  create_table "maps", force: :cascade do |t|
-    t.integer "row"
-    t.integer "col"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "value"
   end
 
 end
