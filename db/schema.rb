@@ -28,10 +28,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_12_201359) do
     t.integer "height"
   end
 
-  create_table "maps", id: false, force: :cascade do |t|
+  create_table "maps", force: :cascade do |t|
     t.integer "row"
     t.integer "col"
-    t.integer "player_id"
+    t.integer "player_id", default: 0
     t.index ["player_id"], name: "index_maps_on_player_id"
     t.index ["row", "col"], name: "index_maps_on_row_and_col", unique: true
   end
